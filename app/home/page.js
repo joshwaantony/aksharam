@@ -28,13 +28,14 @@ export default function Home() {
 
         <Gallery />
 
-        {/* <Souvenirs /> */}
+        <Souvenirs />
 
-        {/* <PlanVisit /> */}
+        <PlanVisit />
 
-        {/* <Footer /> */}
 
       </div>
+        <Footer />
+
     </div>
   );
 }

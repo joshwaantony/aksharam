@@ -115,7 +115,7 @@ export default function Gallery() {
     <div className="w-full ">
 
       {/* TITLE */}
-      <div className="flex items-center justify-between mb-8">
+      <div className="flex items-center justify-between my-8">
         <p className="text-[24px] font-semibold text-[#43483f]">GALLERY</p>
 
         <button className="border border-[#295020] rounded-[8px] px-4 py-2 text-[#295020]">
@@ -135,7 +135,7 @@ export default function Gallery() {
       </div>
 
       {/* 🖥 DESKTOP EXACT ORIGINAL DESIGN */}
-     <div className="hidden xl:flex w-full justify-center">
+     {/* <div className="hidden xl:flex w-full justify-center">
 
   <div className="relative h-[650px] w-[1292px]">
 
@@ -175,7 +175,60 @@ export default function Gallery() {
     />
 
   </div>
+</div> */}
+{/* Outer wrapper: full width, centers content, prevents horizontal scroll */}
+     <div className="hidden xl:flex w-full justify-center">
+
+<div className="w-full flex justify-center overflow-hidden">
+
+
+  <div
+    className="
+      relative
+      w-full max-w-[1292px]
+      h-[650px] md:h-[580px] sm:h-[480px]
+      transform origin-center
+      scale-100 lg:scale-95 md:scale-90 sm:scale-75
+    "
+  >
+    <GalleryABS
+      img={imgRectangle7}
+      className="left-[0px] top-[0px] w-[218px] h-[328px]"
+    />
+
+    <GalleryABS
+      img={imgRectangle8}
+      className="left-[244px] top-[72px] w-[259px] h-[256px]"
+    />
+
+    <GalleryABS
+      img={imgRectangle9}
+      className="left-[522px] top-[0px] w-[326px] h-[228px]"
+    />
+
+    <GalleryABS
+      img={imgRectangle10}
+      className="left-[876px] top-[6px] w-[416px] h-[306px]"
+    />
+
+    <GalleryABS
+      img={imgRectangle11}
+      className="left-[876px] top-[368px] w-[416px] h-[218px]"
+    />
+
+    <GalleryABS
+      img={imgRectangle12}
+      className="left-[522px] top-[256px] w-[326px] h-[378px]"
+    />
+
+    <GalleryABS
+      img={imgRectangle13}
+      className="left-[67px] top-[352px] w-[389px] h-[256px]"
+    />
+  </div>
+  </div>
 </div>
+
 
     </div>
   );

@@ -22,7 +22,7 @@ export default function ConnectWithUs({ className, property1 = "Youtube" }) {
       property1 === "Terms & Conditions") {
     return (
       <div className={className}>
-        <p className="font-['Inter'] text-[14px] text-[#7e7577] leading-6">
+        <p className="font-['Inter'] text-[14px] text-[#7e7577]  hover:text-white cursor-pointer leading-6">
           {property1}
         </p>
       </div>
@@ -30,15 +30,17 @@ export default function ConnectWithUs({ className, property1 = "Youtube" }) {
   }
 
   return (
-    <div className={className}>
-      {icons[property1] && (
+    <div className={className} >
+   <div className="flex gap-2">
+       {icons[property1] && (
         <div className=" shrink-0 size-[24px]">
           <img src={icons[property1]} className="w-full h-full" alt="" />
         </div>
       )}
-      <p className="font-['Inter'] text-[14px] text-[#7e7577] leading-6">
+      <p className="font-['Inter'] text-[14px] text-[#7e7577] hover:text-white cursor-pointer leading-6">
         {property1 === "instagram" ? "Instagram" : property1}
       </p>
+   </div>
     </div>
   );
 }
